@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>WCB Cafe</title>
+    <meta
+      name="description"
+      content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Modern+Antiqua"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      /* ボタンデザイン */
+      .button-010 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 250px;
+        margin: 0 auto;
+        padding: 1em 2em;
+        overflow: hidden;
+        border: none;
+        border-radius: 25px;
+        background-color: #2589d0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1em;
+      }
+
+      .button-010::before {
+        display: block;
+        position: absolute;
+        top: -50%;
+        left: -30%;
+        transform: rotate(30deg);
+        width: 70px;
+        height: 100px;
+        content: "";
+        background-image: linear-gradient(
+          left,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          right bottom,
+          color-stop(0%, rgba(255, 255, 255, 0)),
+          color-stop(50%, rgba(255, 255, 255, 1)),
+          color-stop(100%, rgba(255, 255, 255, 0))
+        );
+        animation: animation-button-010 2s infinite linear;
+      }
+
+      @keyframes animation-button-010 {
+        17% {
+          left: 120%;
+        }
+        100% {
+          left: 120%;
+        }
+      }
+
+      .button-010::after {
+        transform: rotate(45deg);
+        width: 5px;
+        height: 5px;
+        margin-left: 10px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        content: "";
+      }
+
+      .button-010:hover {
+        background-color: #0d7eda;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="home" class="big-bg">
+      <header class="page-header wrapper">
+        <h1>
+          <a href="index.html"
+            ><img class="logo" src="images/logo.png" alt="WCBカフェ ホーム"
+          /></a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="home-content wrapper">
+        <h2 class="page-title">Crafting Your Exclusive Day</h2>
+
+        <p>
+          あなただけの特別な一日を、私たちと一緒に創り上げませんか。一人ひとりの個性を最大限に引き立てる、オリジナルの一日を提供します。
+        </p>
+        <a href="menu.html"><button class="button-010">Menu</button></a>
+      </div>
+      <!-- /.home-content -->
+    </div>
+    <!-- /#home -->
+  </body>
+</html>
